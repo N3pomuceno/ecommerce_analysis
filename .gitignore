@@ -1,0 +1,12 @@
+# Outputs
+data/*
+logs/*
+
+# Settings n Setups
+.vscode/
+.env
+.database_env
+
+# Arquivos gerados por notebooks
+*/.ipynb_checkpoints/
+.ipynb_checkpoints/
