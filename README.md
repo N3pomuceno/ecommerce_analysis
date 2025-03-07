@@ -65,19 +65,12 @@ The project is structured to streamline data science workflows. Below is an over
 ```
 sql_project
 ├── README.md                # Project overview and setup instructions
-├── data                     # Directory for dataset storage
-│   ├── processed            # Processed datasets
-│   ├── raw                  # Raw datasets
-│   └── summary.json         # Summary of data
 ├── docker-compose.yml       # Configuration for containerized services
 ├── documentation            # Project documentation and task tracking
 │   ├── documentation.md     # Project goals and guidelines
 │   └── todo.md              # Task tracking file
 ├── logs                     # Directory for storing log files
 ├── pyproject.toml           # Dependency management and project metadata
-├── sql                      # SQL-related files
-│   ├── queries              # SQL queries for data extraction and analysis
-│   └── schemas              # Database schema definitions
 ├── src                      # Source code for the project
 │   ├── __init__.py          # Package initialization
 │   ├── eda_util.py          # Utility functions for EDA
