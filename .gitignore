@@ -1,6 +1,7 @@
 # Outputs
 data/*
 logs/*
+*.csv
 
 # Settings n Setups
 .vscode/
