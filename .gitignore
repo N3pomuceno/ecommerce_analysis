@@ -1,10 +1,12 @@
 # Outputs
-data/*
+data/
 logs/*
 *.csv
 
 # Settings n Setups
 .vscode/
+.venv/
+src/__pycache__/
 .env
 .database_env
 
