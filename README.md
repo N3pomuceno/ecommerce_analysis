@@ -2,7 +2,13 @@
 
 ## Description
 
-Projeto dedicado para prática e análises com SQL.
+Project focused on practices for SQL using Python and Docker. The main idea is to answer some questions about a e-commerce db, and see the difference between using raw SQL, SQLAlchemy and the DBT tool, were I can get more experience in the area.
+
+The questions will be in `documentation/questions.md`
+
+All of the python code can be seen in `src` folder and the queries in the `sql` folder. The DBT will be in the `dbt_project` folder. My conclusions will be in the `documentation/conclusions.md`.
+
+If you want to reproduce my experiment, there is no problem, just take make sure to keep the MIT License.
 
 ## Setting Up the Virtual Environment
 
@@ -27,7 +33,7 @@ poetry run jupyter lab
 
 ## Using the Database
 
-To use the database, Docker Desktop must be installed and running. Once set up, start the database with:
+To use the database, Docker Desktop or Engine must be installed and running. Once set up, start the database with:
 
 ```bash
 docker-compose up -d
@@ -43,47 +49,6 @@ docker-compose down
 
 Additionally, the project includes the Data Build Tool ([DBT](https://docs.getdbt.com/docs/introduction)), which facilitates data transformation, validation, and efficiency monitoring in the database.
 
-## Initializing Git Repository
-
-By default, Git is not initialized. If you want to link the project to a repository, follow these steps:
-
-```bash
-# Initialize the repository
-git init
-
-# Add a remote repository
-git remote add origin <your_repo_https_or_ssh_link>
-
-# Push the main branch to the remote repository
-git push origin main
-```
-
-## Project Structure
-
-The project is structured to streamline data science workflows. Below is an overview of the main directories:
-
-```
-sql_project
-├── README.md                # Project overview and setup instructions
-├── docker-compose.yml       # Configuration for containerized services
-├── documentation            # Project documentation and task tracking
-│   ├── documentation.md     # Project goals and guidelines
-│   └── todo.md              # Task tracking file
-├── logs                     # Directory for storing log files
-├── pyproject.toml           # Dependency management and project metadata
-├── src                      # Source code for the project
-│   ├── __init__.py          # Package initialization
-│   ├── eda_util.py          # Utility functions for EDA
-│   ├── exception.py         # Custom exception handling
-│   ├── logger.py            # Logging utility for debugging
-│   └── util.py              # General utility functions
-└── tests                    # Directory for unit and integration tests
-```
-
-
-I can't emphasize enough the impact of [Pedro Almeida](https://github.com/allmeidaapedro)'s work, which greatly influenced the structure of the `src` folder through his [project](https://github.com/allmeidaapedro/Churn-Prediction-Credit-Card). Additionally, the idea of documenting model results follows an established [standard](https://arxiv.org/pdf/1810.03993), which particularly caught my attention.  
-
-
 
 ## Documentation and Planning
 
@@ -98,3 +63,6 @@ For better alignment among team members, a repository will include two markdown 
 - Keep `pyproject.toml` or `requirements.txt` updated with necessary dependencies.
 - Use Git for version control and commit regularly to track progress.
 
+---
+
+I can't emphasize enough the impact of [Pedro Almeida](https://github.com/allmeidaapedro)'s work, which greatly influenced the structure of the `src` folder through his [project](https://github.com/allmeidaapedro/Churn-Prediction-Credit-Card).
