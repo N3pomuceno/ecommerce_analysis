@@ -52,10 +52,12 @@ Additionally, the project includes the Data Build Tool ([DBT](https://docs.getdb
 
 ## Documentation and Planning
 
-For better alignment among team members, a repository will include two markdown files:
+For better alignment among team members, a repository will include some markdown files:
 
 - `documentation.md`: Defines project goals and guidelines.
 - `todo.md`: Tracks completed, ongoing, and upcoming tasks.
+- `questions.md`: All the questions I want to answer in SQL.
+- `conclusion.md`: Just a file to make insights about the experience.
 
 ## Best Practices
 
